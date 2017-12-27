@@ -1,0 +1,234 @@
+/*darkblue: #00357F*/
+/*lightblue: #4682B4 */
+
+.App {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: white;
+}
+
+p {
+  text-align: left;
+  font-size: 25px;
+  padding: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.container {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10% 5% 50% 10%;
+  grid-template-areas: 
+      "t t t t t t t t t t t t"
+      "h h h h h h h h h h h h"
+      "b b b b n n n n n n n n"
+      "a a a a a a a a a a a a"
+      "p p p p p p p p p p p p"
+      "m m m c c c c c c c c c"
+      "f f f f f f f f f f f f";
+}
+
+.topHeader{
+  background-color: #27598C;
+  grid-area: t;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  border-bottom: 1px #00357F solid
+}
+
+.callToday{
+  grid-column: 1/4;
+  font-size: 35px;
+  color: white; 
+  padding: 5%;
+}
+
+.appointment{
+  grid-column: 10/13;
+  font-size: 30px;
+  color: white; 
+  background-color: #3D97C0;
+  padding: 5%;
+}
+
+.header {
+  background-color: white;
+  grid-area: h;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2%;
+}
+.name{
+  text-align: left;
+  font-size: 75px;
+  text-decoration: none;
+  color: #3D97C0; 
+}
+
+.nameSub{
+  text-align: left;
+  font-size: 30px;
+  text-decoration: none;
+  color: #416F9D; 
+}
+.nav {
+  grid-area: n;
+  background: white;
+  padding: 45px;
+}
+
+.nav a{
+  /*border: red 1px solid;*/
+  color: #416F9D;
+  font-size: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
+  grid-column: auto;
+  text-decoration: none;
+  /*background: red;*/
+}
+
+.nav a:hover{
+  color: #4682B4;
+}
+
+
+
+.menu {
+  background-color:#D3D3D4    ;
+  grid-area: m;
+  padding: 5%;
+}
+
+.spinePic{
+  width: 100%;
+  grid-area: p;
+}
+
+.searchBox{
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-size: 15px;
+  padding:8px 15px;
+  background: rgb(240,240,240);
+  border: rgb(240,240,240) solid 0px;
+}
+
+.awardWrapper{
+  grid-area: a;
+  background-color: #F9F9FA;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 1%;
+}
+
+.awards{
+  padding: 1%;
+  width: 250px;
+  height: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+/*  filter: grayscale(100%);*/
+}
+
+.awardAAOS{
+  padding: 1%;
+  width: 350px;
+  height: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.awardsBest{
+  padding: 1%;
+  width: 100px;
+  height: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /*filter: grayscale(100%);*/
+}
+
+
+
+.about{
+  background-color: white;
+  grid-area: c;
+  padding: 10%;
+}
+
+.educational{
+  grid-area: c;
+  background-color: white;
+}
+
+.news{
+  grid-area: c;
+  background-color: white;
+}
+
+.contact{
+  grid-area: c;
+  background-color: white;
+  padding: 5%;
+}
+
+.border{
+  width: 100%;
+  border-bottom: 2px solid #f0f0f5;
+}
+
+.contact p {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.reviewContainer{
+  padding: 2%;
+  /*border: 1px blue solid;*/
+  grid-area: c;
+  background-color: white;
+}
+
+.reviewList{
+  display: grid;
+  grid-gap: 20px;
+  padding: 2%;
+}
+
+.reviewItem{
+  font-size: 20px;
+  padding: 2%;
+  border: 1px #4682B4 solid;
+}
+
+.starPic{
+  height: 50px;
+  width: auto;
+
+}
+
+.dadPic{
+  /* original pic is 2106 × 1400*/
+  height: auto;
+  width: 100%;
+  /*border-bottom: 2px solid #f0f0f5;*/
+}
+
+.footer {
+  background-color: #27598C;
+  grid-area: f;
+  padding: 5%;
+}
+

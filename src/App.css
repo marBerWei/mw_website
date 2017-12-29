@@ -24,8 +24,8 @@ p {
   grid-template-areas: 
       "t t t t t t t t t t t t"
       "h h h h h h h h h h h h"
-      "b b b b n n n n n n n n"
-      "a a a a a a a a a a a a"
+      "b b b b b b n n n n n n"
+      "w w w w w w w w w w w w"
       "p p p p p p p p p p p p"
       "m m m c c c c c c c c c"
       "f f f f f f f f f f f f";
@@ -76,27 +76,81 @@ p {
   text-decoration: none;
   color: #416F9D; 
 }
-.nav {
+
+ul {
   grid-area: n;
-  background: white;
+  list-style-type: none;
+  margin: 0;
   padding: 45px;
+  overflow: hidden;
+  background-color: white;
 }
 
-.nav a{
-  /*border: red 1px solid;*/
+li {
+  float: left;
+}
+
+/*.nav {
+  padding: 45px;
+  border: red 1px solid;
+}
+*/
+
+li a, .dropbtn {
+  display: inline-block;
   color: #416F9D;
   font-size: 40px;
-  padding-left: 5%;
-  padding-right: 5%;
-  grid-column: auto;
+  text-align: center;
+  padding: 10px 12px;
   text-decoration: none;
-  /*background: red;*/
 }
 
-.nav a:hover{
+
+/*.nav a{
+  border: orange 1px solid;
+  color: #416F9D;
+  font-size: 40px;
+
+  grid-column: auto;
+  text-decoration: none;
+}
+*/
+
+
+
+li a:hover, .dropdown:hover .dropbtn {
   color: #4682B4;
 }
 
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 .menu {
@@ -123,40 +177,30 @@ p {
 }
 
 .awardWrapper{
-  grid-area: a;
+  grid-area: w;
   background-color: #F9F9FA;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   padding: 1%;
 }
 
+.awardContainer{
+  margin: auto;
+}
+
 .awards{
   padding: 1%;
   width: 250px;
-  height: auto;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
-/*  filter: grayscale(100%);*/
 }
 
 .awardAAOS{
   padding: 1%;
   width: 350px;
-  height: auto;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .awardsBest{
   padding: 1%;
   width: 100px;
-  height: auto;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
-  /*filter: grayscale(100%);*/
 }
 
 

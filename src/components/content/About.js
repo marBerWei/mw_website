@@ -1,8 +1,10 @@
 import React from 'react'
+import Awards from '../header/Awards'
 
 const About = () => {
 	return(
 		<div className="about">
+			<Awards/>
 			<iframe 
 				width="1120" 
 				height="630" 

@@ -4,13 +4,25 @@ import { NavLink } from 'react-router-dom'
 class Nav extends React.Component {
   render() {
     return (
-      <div className="nav">
-        <NavLink activeClassName="active" className="item" to="/">ABOUT</NavLink>
-        <NavLink activeClassName="active" className="item" to="/educate">PATIENTS</NavLink>
-        <NavLink activeClassName="active" className="item" to="/news">NEWS</NavLink>
-        <NavLink activeClassName="active" className="item" to="/contact">CONTACT</NavLink>
-        <NavLink activeClassName="active" className="item" to="/reviews">REVIEWS</NavLink>
-      </div>
+      <ul>
+        <li><NavLink activeClassName="active" className="dropbtn" to="/">ABOUT</NavLink></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">PATIENTS</a>
+          <div class="dropdown-content">
+            <NavLink activeClassName="active" to="/educate">Education</NavLink>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">TESTIMONIALS</a>
+          <div class="dropdown-content">
+            <NavLink activeClassName="active" to="/reviews">Patients</NavLink>
+            <a href="#">Doctors</a>
+          </div>
+        </li>
+        <li><a href="#news">NEWS</a></li>
+      </ul>
     )
   }
 }
@@ -18,3 +30,17 @@ class Nav extends React.Component {
 
 export default Nav
 
+// <div className="nav">
+//         <NavLink activeClassName="active" className="dropbtn" to="/">
+//         ABOUT
+//         <div className="dropdown">
+//           <div className="dropdown-content">
+//             Hello from the dropdown
+//           </div>
+//         </div>
+//         </NavLink>
+//         <NavLink activeClassName="active" to="/educate">PATIENTS</NavLink>
+//         <NavLink activeClassName="active" to="/news">NEWS</NavLink>
+//         <NavLink activeClassName="active" to="/contact">CONTACT</NavLink>
+//         <NavLink activeClassName="active" to="/reviews">REVIEWS</NavLink>
+//       </div>

@@ -20,10 +20,10 @@ class App extends Component {
       <div className="App">
         <div className= "container">
           <CallToday/>
-          <Awards/>
           <Header/>
           <Nav/>
           <SpineImage/>
+          <Awards/>
           <Menu/>
           <Route exact path="/" render={About} />
           <Route path="/educate" render={EdRes} />

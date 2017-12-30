@@ -12,7 +12,6 @@ p {
   text-align: left;
   font-size: 25px;
   padding: 10px;
-  font-family: 'Playfair Display', serif;
 }
 
 
@@ -25,9 +24,7 @@ p {
       "t t t t t t t t t t t t"
       "h h h h h h h h h h h h"
       "b b b b b b n n n n n n"
-      "w w w w w w w w w w w w"
-      "p p p p p p p p p p p p"
-      "m m m c c c c c c c c c"
+      "c c c c c c c c c c c c"
       "f f f f f f f f f f f f";
 }
 
@@ -49,7 +46,7 @@ p {
 
 .appointment{
   grid-column: 10/13;
-  font-size: 30px;
+  font-size: 35px;
   color: white; 
   background-color: #3D97C0;
   padding: 5%;
@@ -58,12 +55,12 @@ p {
 .header {
   background-color: white;
   grid-area: h;
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 2%;
+  padding: 1%;
+  /*border: red 1px solid;*/
+  /*background-color: #F9F9FA;*/
 }
-.name{
+
+.name {
   text-align: left;
   font-size: 75px;
   text-decoration: none;
@@ -81,45 +78,29 @@ ul {
   grid-area: n;
   list-style-type: none;
   margin: 0;
-  padding: 45px;
+  padding: 15px;
   overflow: hidden;
   background-color: white;
 }
 
 li {
-  float: left;
+  float: right;
+  border-bottom: 1px #00357F solid;
 }
-
-/*.nav {
-  padding: 45px;
-  border: red 1px solid;
-}
-*/
 
 li a, .dropbtn {
   display: inline-block;
   color: #416F9D;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
-  padding: 10px 12px;
+  padding: 15px 20px;
   text-decoration: none;
 }
-
-
-/*.nav a{
-  border: orange 1px solid;
-  color: #416F9D;
-  font-size: 40px;
-
-  grid-column: auto;
-  text-decoration: none;
-}
-*/
-
 
 
 li a:hover, .dropdown:hover .dropbtn {
-  color: #4682B4;
+  background-color: #3D97C0;
+  color: white;
 }
 
 
@@ -141,22 +122,22 @@ li.dropdown {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-size: 30px;
   text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1
+  color: #3D97C0;
+  background-color: #f1f1f1;
+  font-size: 30px;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-
-.menu {
-  background-color:#D3D3D4    ;
-  grid-area: m;
-  padding: 5%;
+.movie{
+  grid-area: d;
 }
 
 .spinePic{
@@ -203,17 +184,66 @@ li.dropdown {
   width: 100px;
 }
 
-
-
 .about{
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10% 5% 50%;
+  grid-template-areas: 
+      "w w w w w w w w w w w w"
+      "p p p p p p p p p p p p"
+      "m m m m d d d d d d d d";
   background-color: white;
   grid-area: c;
-  padding: 10%;
+  padding: 0%;
+}
+
+.aboutContainer{
+  grid-area: d;
+  padding: 20px;
+}
+
+.aboutBackground {
+  background-color: #F9F9FA;
+  padding: 5%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.aboutContent{
+  text-align: left;
+  font-size: 40px;
+  color: #4C719B;
+}
+
+.menuContainer{
+  grid-area: m;
+  padding: 20px;
+}
+
+.menu {
+  background-color: #F9F9FA;
+  padding: 5%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menuContent {
+  text-align: left;
+  color: #4C719B;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menuTitle{
+  font-size: 40px;
+  color: #5296BC;
+  font-weight: bold;
+  border-bottom: rgb(240,240,240) solid 1px;
 }
 
 .educational{
   grid-area: c;
   background-color: white;
+  padding: 5%;
 }
 
 .news{
@@ -240,6 +270,8 @@ li.dropdown {
 
 .reviewContainer{
   padding: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
   /*border: 1px blue solid;*/
   grid-area: c;
   background-color: white;

@@ -3,32 +3,32 @@ import React from 'react'
 class Menu extends React.Component {
 	render(){
 		return (
+		<div className="menuContainer">
 			<div className="menu">
-			<img
-				className = "dadPic"
-          	src={require('./dadPic.png')}
-        	/>
-        <div>Dr. Mark Weidenbaum</div>
-        <span><p>Dr. Mark Weidenbaum
-				Lorem ipsum dolor sit amet, 
-				consectetur adipiscing elit. 
-				Phasellus volutpat sapien non diam viverra, 
-				quis laoreet neque efficitur. 
-				Cras fermentum erat vel lectus 
-				finibus, eu efficitur lorem accumsan. 
-				Etiam congue quis dui quis efficitur. 
-				Phasellus commodo neque at posuere congue. 
-				Nunc fermentum convallis nisl, at porttitor 
-				lorem finibus sed. Ut eu fringilla eros. 
-				Etiam pretium vulputate odio, sed 
-				placerat nulla placerat vel. 
-				Sed dui velit, condimentum quis malesuada sed,
-				 scelerisque vel mi. Fusce et sagittis neque. 
-				 Suspendisse potenti. Vestibulum eros dolor, 
-				 vulputate at imperdiet vitae, feugiat in quam.
-				 </p></span>
+		    <div className="menuContent">
+					<p className="menuTitle">Dr. Weidenbaum's CV</p>
+					<p><strong>College:</strong><br/>
+					B.S. Chemistry; University of Connecticut</p>
+
+					<p><strong>Medical School:</strong><br/>
+					Columbia University College of Physicians and Surgeons</p>
+
+					<p><strong>Residency:</strong><br/>
+					Orthopaedic Surgery,<br/>
+					The New York Orthopaedic Hospital at Columbia-Presbyterian Medical Center<br/>
+					<br/>
+					<strong>Fellowship:</strong><br/>
+					Chicago Spine Fellowship; Rush-Presbyterian- St. Luke’s Medical Center, Chicago, Illinois, and The Shriners Hospital for Crippled Children, Oak Park, Illinois<br/>
+					<br/>
+					<strong>Board Certification:</strong><br/>
+					American Board of Orthopaedic Surgery</p>
+
+					<p><strong>Affiliations:</strong><br/>
+					</p>
+				</div>
 			</div>
-		)
+		</div>
+	)
 	}
 }
 

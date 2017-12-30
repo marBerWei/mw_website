@@ -3,15 +3,15 @@ import './App.css';
 import Footer from './components/footer/FooterContainer'
 import Header from './components/header/HeaderContainer'
 import Nav from './components/header/Nav'
-import Menu from './components/menu/MenuContainer'
+// import Menu from './components/menu/MenuContainer'
 import About from './components/content/About'
 import EdRes from './components/content/EducationalResources'
 import News from './components/content/News'
 import Contact from './components/content/Contact'
 import ReviewContainer from './components/content/ReviewContainer'
-import SpineImage from './components/header/SpineImage'
+// import SpineImage from './components/header/SpineImage'
 import CallToday from './components/content/CallToday'
-import Awards from './components/header/Awards'
+// import Awards from './components/header/Awards'
 import { Route, Redirect } from 'react-router-dom'
 
 class App extends Component {
@@ -22,9 +22,6 @@ class App extends Component {
           <CallToday/>
           <Header/>
           <Nav/>
-          <SpineImage/>
-          <Awards/>
-          <Menu/>
           <Route exact path="/" render={About} />
           <Route path="/educate" render={EdRes} />
           <Route path="/reviews" component={ReviewContainer} />

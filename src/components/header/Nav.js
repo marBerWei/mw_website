@@ -5,15 +5,7 @@ class Nav extends React.Component {
   render() {
     return (
       <ul>
-        <li><NavLink activeClassName="active" className="dropbtn" to="/">ABOUT</NavLink></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">PATIENTS</a>
-          <div class="dropdown-content">
-            <NavLink activeClassName="active" to="/educate">Education</NavLink>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </li>
+        
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">TESTIMONIALS</a>
           <div class="dropdown-content">
@@ -22,6 +14,16 @@ class Nav extends React.Component {
           </div>
         </li>
         <li><a href="#news">NEWS</a></li>
+
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">PATIENTS</a>
+          <div class="dropdown-content">
+            <NavLink activeClassName="active" to="/educate">Education</NavLink>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li><NavLink activeClassName="active" className="dropbtn" to="/">ABOUT</NavLink></li>
       </ul>
     )
   }

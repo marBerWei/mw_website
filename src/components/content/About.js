@@ -2,6 +2,8 @@ import React from 'react'
 import Awards from '../header/Awards'
 import Menu from '../menu/MenuContainer'
 import SpineImage from '../header/SpineImage'
+import Testimonial from './Testimonial'
+import Resources from './Resources'
 
 const About = () => {
 	return(
@@ -41,8 +43,9 @@ const About = () => {
 
 					</div>
 				</div>
-
 			</div>
+			<Testimonial/>
+			<Resources/>
 		</div>
 	)
 }

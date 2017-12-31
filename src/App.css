@@ -1,5 +1,5 @@
-/*darkblue: #00357F*/
-/*lightblue: #4682B4 */
+/*darkblue: #0050A0 */
+/*newlightblue: #12A8E0; */
 
 .App {
   text-align: center;
@@ -23,18 +23,27 @@ p {
   grid-template-areas: 
       "t t t t t t t t t t t t"
       "h h h h h h h h h h h h"
-      "b b b b b b n n n n n n"
+      "b b b b n n n n n n n n"
       "c c c c c c c c c c c c"
       "f f f f f f f f f f f f";
 }
 
 .topHeader{
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #27598C;
   grid-area: t;
   display: grid;
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
   border-bottom: 1px #00357F solid
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%
 }
 
 .callToday{
@@ -48,14 +57,16 @@ p {
   grid-column: 10/13;
   font-size: 35px;
   color: white; 
-  background-color: #3D97C0;
+  background-color: #12A8E0;
   padding: 5%;
 }
 
 .header {
   background-color: white;
   grid-area: h;
-  padding: 1%;
+  padding-top: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
   /*border: red 1px solid;*/
   /*background-color: #F9F9FA;*/
 }
@@ -64,7 +75,7 @@ p {
   text-align: left;
   font-size: 75px;
   text-decoration: none;
-  color: #3D97C0; 
+  color: #12A8E0; 
 }
 
 .nameSub{
@@ -78,7 +89,7 @@ ul {
   grid-area: n;
   list-style-type: none;
   margin: 0;
-  padding: 15px;
+  padding: 20px;
   overflow: hidden;
   background-color: white;
 }
@@ -91,15 +102,15 @@ li {
 li a, .dropbtn {
   display: inline-block;
   color: #416F9D;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
-  padding: 15px 20px;
+  padding: 15px 60px;
   text-decoration: none;
 }
 
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: #3D97C0;
+  background-color: #12A8E0;
   color: white;
 }
 
@@ -127,7 +138,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-  color: #3D97C0;
+  color: #12A8E0;
   background-color: #f1f1f1;
   font-size: 30px;
 }
@@ -192,7 +203,9 @@ li.dropdown {
   grid-template-areas: 
       "w w w w w w w w w w w w"
       "p p p p p p p p p p p p"
-      "m m m m d d d d d d d d";
+      "m m m m d d d d d d d d"
+      "r r r r r r r r r r r r"
+      "c c c c c c c c c c c c";
   background-color: white;
   grid-area: c;
   padding: 0%;
@@ -238,6 +251,59 @@ li.dropdown {
   color: #5296BC;
   font-weight: bold;
   border-bottom: rgb(240,240,240) solid 1px;
+}
+
+.testimonial{
+  grid-area: r;
+}
+
+.testimonialContainer{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+      "a a a a a a a a b b b b"
+      "c c c c d d d d d d d d";
+  color: white;
+  font-size: 40px;
+}
+
+.testimonial1{
+  grid-area: a;
+  background: #119EDC;
+  padding: 10%;
+
+}
+
+.testimonial2{
+  grid-area: b;
+  background: #8EA1AF;
+  padding: 20%;
+}
+
+.testimonial3{
+  grid-area: c;
+  background: #8EA1AF;
+  padding: 20%;
+}
+
+.testimonial4{
+  grid-area: d;
+  background: #2F2E2C;
+  padding: 10%;
+}
+
+.resources{
+  border: red solid 1px;
+  grid-area: c;
+}
+
+.resourcesContainer{
+  display: block;
+}
+
+.resourcesItem{
+
 }
 
 .educational{

@@ -5,7 +5,7 @@ class Nav extends React.Component {
   render() {
     return (
       <ul>
-        
+        <li><NavLink activeClassName="active" className="dropbtn" to="/contact">CONTACT</NavLink></li>
         <li class="dropdown">
           <a href="javascript:void(0)" class="dropbtn">TESTIMONIALS</a>
           <div class="dropdown-content">
@@ -19,8 +19,7 @@ class Nav extends React.Component {
           <a href="javascript:void(0)" class="dropbtn">PATIENTS</a>
           <div class="dropdown-content">
             <NavLink activeClassName="active" to="/educate">Education</NavLink>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">FAQ</a>
           </div>
         </li>
         <li><NavLink activeClassName="active" className="dropbtn" to="/">ABOUT</NavLink></li>

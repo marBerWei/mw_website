@@ -5,7 +5,8 @@ class SpineImage extends React.Component {
 		return (
 				<img
           className = "spinePic"
-          src={require('./dadPic.png')}/>
+          src={require('./dadPic.png')}
+        />
     )
   }
 }

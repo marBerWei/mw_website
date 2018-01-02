@@ -11,7 +11,6 @@ const About = () => {
 			<SpineImage />
 			<Awards/>
 			<Menu/>
-
 			<div className="aboutContainer">
 				<div className="aboutBackground">
 					<div className="aboutContent">
